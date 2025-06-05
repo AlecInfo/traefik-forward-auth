@@ -100,6 +100,7 @@ func ValidateEmail(email, ruleName string) bool {
 	return false
 }
 
+// ValidateRequest validates the request against the authorization service
 // and returns true if the request is authorized
 func ValidateRequest(r *http.Request, email string) bool {
 	if config.AuthorizationURL == "" {
